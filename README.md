@@ -14,5 +14,3 @@ Location : ECE 237
 - 
 
 ## TODO
-* [ ] Convert the damn zip into linux readable format.
-* [ ] Get the NXP board to run on main machine. (maybe delve into a Linux substation for Windows?)
