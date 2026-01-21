@@ -1,11 +1,11 @@
 # Assignment 1
 
-Given the [prompt](./Doc/Assignment_1.md) I have decided to take an approach that I will document in a series of markdown files. 
+Given the [prompt](./Doc/Assignment_1.md) I have decided to take an approach that I will document in a series of markdown files.
 
 ## Approach
 
 ### Obtaining Necessary Dev Tools
-- Given my main machine is currently running Arch Linux as of Jan 2026, installing the IDE with the provided zips will be pointless (not a fan of IDEs anyways). 
+- Given my main machine is currently running Arch Linux as of Jan 2026, installing the IDE with the provided zips will be pointless (not a fan of IDEs anyways).
 
 - Typically, my preferred approach to embedded development is to use command line interface (CLI) build tools. This led me to research CLI alternatives to the proposed IDE. This is where the fun comes in as there really isn't a supported CLI toolchain provided by NXP like esp-idf for ESP32, so I have opted to use OpenOCD for flashing and the standard ARM GCC toolchain for compiling.
 
@@ -22,9 +22,9 @@ cp -r CMSIS_5-develop/CMSIS/Core/Include/* RTE/CMSIS/
 rm -rf CMSIS_5-develop develop.zip
 ```
 
-The main compromise (if you really want to call it that) is that a [Makefile](./Makefile) is now required for projects. 
+The main compromise (if you really want to call it that) is that a [Makefile](./Makefile) is now required for projects.
 
-### Verification 
+### Verification
 I started with verifying that OpenOCD worked first. You don't have to, I just did.
 
 To do this I:
@@ -96,4 +96,27 @@ text    data     bss     dec     hex filename
 
 Successfully flashed and verified!
 ---
+## Clock Configuration
 
+The K22F is configured for 120MHz core clock from an 8MHz external crystal
+(see [MCG.c](./src/MCG.c)). HSRUN mode is enabled to allow operation above 80MHz.
+
+| Domain  | Frequency | Divider        |
+|---------|-----------|----------------|
+| Core    | 120 MHz   | OUTDIV1=0 (÷1) |
+| Bus     | 60  MHz   | OUTDIV2=1 (÷2) |
+| FlexBus | 30  MHz   | OUTDIV3=3 (÷4) |
+| Flash   | 24  MHz   | OUTDIV4=4 (÷5) |
+
+PIT runs on the bus clock, so for Fs = 10kHz:
+```
+LDVAL = (60MHz / 10kHz) - 1 = 5999
+```
+
+Note: `RTE_Device.h` defines `RTE_BUSCLK = 48000000` but this is incorrect
+for the HSRUN configuration. The actual bus clock is determined by `MCG.c`.
+
+## TODO List
+* [ ] Start ADC conversion and read previous result
+* [ ] Apply warble envelope
+* [ ] Write to DAC (12-bit)

@@ -24,7 +24,7 @@ Implement a "warbling digital wire" on the K22F hardware. That is, you need to a
    - `MCG.c`
    - `TimerInt.c`
    - Associated header (`.h`) files
-   
+
    You should be able to identify gross functionality for each file.
 
 4. **Connect your K22F board** to your PC through a USB cable. Press the "Download" button. Barring any surprises, you should get confirmation that your DSP is erased, programmed, and then verified—thus confirming proper connection and communication between Keil and the K22F.
@@ -62,7 +62,7 @@ Implement a "warbling digital wire" on the K22F hardware. That is, you need to a
    - Compile and download your code
    - Add wires for input (plus ground) and output (plus ground) to the appropriate board headers
    - Test functionality by applying a DC-offset sine wave as input, and verifying that a warbling sine wave is generated on the output
-   
+
    **⚠️ IMPORTANT:** You must make sure your input x(t) is within the amplitude range **0.0 ≤ x(t) ≤ 3.0 (volts)**. If you apply an inappropriate voltage, you can damage the board! Be sure the function generator output termination is set to "high-z".
 
 10. **Debugging:**

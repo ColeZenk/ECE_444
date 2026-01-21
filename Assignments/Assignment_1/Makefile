@@ -110,4 +110,8 @@ erase:
 clean:
 	rm -rf $(BUILD_DIR)
 
-.PHONY: all clean flash erase
+# Format
+format:
+	clang-format -i $(SOURCES) $(wildcard $(INC_DIR)/*.h)
+
+.PHONY: all clean flash erase format

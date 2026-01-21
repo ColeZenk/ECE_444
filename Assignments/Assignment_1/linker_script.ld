@@ -27,13 +27,13 @@ SECTIONS
     FILL(0xFF);
     . = ORIGIN(FLASH) + 0x400;
   } > FLASH
-  
+
   /* Flash Configuration Field - MUST be at 0x400 */
   .flashconfig 0x400 :
   {
     KEEP(*(.flashconfig))
   } > FLASH
-  
+
   /* Verify FCF is at correct address */
   ASSERT(. == 0x410, "ERROR: Flash Config Field not at 0x400!")
 
@@ -75,7 +75,7 @@ SECTIONS
 
   /* Initialized data */
   _sidata = LOADADDR(.data);
-  
+
   .data :
   {
     . = ALIGN(4);
