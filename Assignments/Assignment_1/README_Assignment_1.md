@@ -132,12 +132,22 @@ Convert:
 4. Back to analog
 
 I.e.
+```mermaid
+
+flowchart TD
+    A[Sinusoid input] -->|Continuous to Discrete| B(K22 MCU)
+    B --> C{Check period status}
+    C -->|Subperiod 1| D[10% scale output]
+    C -->|Subperiod 2| E[Full scale output]
+```
 start with aquisition, --> Implement an algorithm that transforms inputs --> output the transformed function
 
 
 ---
 
 # TODO List
+* [X] Confgure Fs to run at 10 KHz
+* [X] Obtain the software and flash the board
 * [ ] Start ADC conversion and read previous result
 * [ ] Apply warble envelope
 * [ ] Write to DAC (12-bit)
