@@ -12,10 +12,6 @@
 #include "TimerInt.h"
 #include "MK22F51212.h"
 
-#define BUS_CLOCK_HZ    60000000u
-#define SAMPLE_RATE_HZ  10000u
-#define PIT_LDVAL       ((BUS_CLOCK_HZ / SAMPLE_RATE_HZ) - 1)
-
 /**
  * @brief Initialize PIT Channel 0 for periodic interrupts
  */

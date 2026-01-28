@@ -16,6 +16,9 @@ CPU = -mcpu=cortex-m4
 FPU = -mfpu=fpv4-sp-d16
 FLOAT_ABI = -mfloat-abi=hard
 
+# Libraries
+LIBS = -lm
+
 # Compiler flags
 CFLAGS = $(CPU) $(FPU) $(FLOAT_ABI) -mthumb
 CFLAGS += -O2 -Wall
@@ -42,7 +45,8 @@ SOURCES = \
 	$(SRC_DIR)/main.c \
 	$(SRC_DIR)/MCG.c \
 	$(SRC_DIR)/TimerInt.c \
-	$(SRC_DIR)/uart.c \
+  $(SRC_DIR)/Utilities.c \
+  $(SRC_DIR)/WarblingWire.c \
 	RTE/Device/MK22FN512VLH12/system_MK22F51212.c
 
 ASM_SOURCES = startup_MK22F51212.s
@@ -68,7 +72,7 @@ $(BUILD_DIR):
 # Link
 $(ELF): $(OBJECTS)
 	@echo "Linking..."
-	$(CC) $(LDFLAGS) $^ -o $@
+	$(CC) $(LDFLAGS) $^ $(LIBS) -o $@
 
 # Create binary
 $(BIN): $(ELF)

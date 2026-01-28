@@ -1,8 +1,31 @@
+Archive member included to satisfy reference by file (symbol)
 
-Allocating common symbols
-Common symbol       size              file
-
-adc_sample          0x2               build/src/main.o
+/usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+                              build/src/Utilities.o (sinf)
+/usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+                              /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o) (__ieee754_rem_pio2f)
+/usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+                              /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o) (__kernel_cosf)
+/usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+                              /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o) (__kernel_rem_pio2f)
+/usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+                              /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o) (__kernel_sinf)
+/usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+                              /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o) (fabsf)
+/usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+                              /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o) (floorf)
+/usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+                              /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o) (scalbnf)
+/usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+                              build/src/Utilities.o (__aeabi_dmul)
+/usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+                              build/src/Utilities.o (__aeabi_dsub)
+/usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+                              build/src/Utilities.o (__aeabi_ddiv)
+/usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+                              build/src/Utilities.o (__aeabi_dcmplt)
+/usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+                              build/src/Utilities.o (__aeabi_d2f)
 
 Discarded input sections
 
@@ -15,25 +38,35 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/src/main.o
  .data          0x0000000000000000        0x0 build/src/main.o
  .bss           0x0000000000000000        0x0 build/src/main.o
- COMMON         0x0000000000000000        0x2 build/src/main.o
  .text          0x0000000000000000        0x0 build/src/MCG.o
  .data          0x0000000000000000        0x0 build/src/MCG.o
  .bss           0x0000000000000000        0x0 build/src/MCG.o
  .text          0x0000000000000000        0x0 build/src/TimerInt.o
  .data          0x0000000000000000        0x0 build/src/TimerInt.o
  .bss           0x0000000000000000        0x0 build/src/TimerInt.o
- .text          0x0000000000000000        0x0 build/src/uart.o
- .data          0x0000000000000000        0x0 build/src/uart.o
- .bss           0x0000000000000000        0x0 build/src/uart.o
+ .text          0x0000000000000000        0x0 build/src/Utilities.o
+ .data          0x0000000000000000        0x0 build/src/Utilities.o
+ .bss           0x0000000000000000        0x0 build/src/Utilities.o
  .text.UART0_Init
-                0x0000000000000000       0x44 build/src/uart.o
+                0x0000000000000000       0x44 build/src/Utilities.o
  .text.UART0_PutChar
-                0x0000000000000000       0x10 build/src/uart.o
+                0x0000000000000000       0x10 build/src/Utilities.o
  .text.UART0_Print
-                0x0000000000000000       0x1c build/src/uart.o
- .comment       0x0000000000000000       0x12 build/src/uart.o
+                0x0000000000000000       0x1c build/src/Utilities.o
+ .text.WaveGen_Init
+                0x0000000000000000       0x58 build/src/Utilities.o
+ .text.WaveGen_Sine
+                0x0000000000000000       0x88 build/src/Utilities.o
+ .text.WaveGen_Triangle
+                0x0000000000000000       0xb8 build/src/Utilities.o
+ .text.WaveGen_Square
+                0x0000000000000000       0x90 build/src/Utilities.o
+ .comment       0x0000000000000000       0x12 build/src/Utilities.o
  .ARM.attributes
-                0x0000000000000000       0x34 build/src/uart.o
+                0x0000000000000000       0x34 build/src/Utilities.o
+ .text          0x0000000000000000        0x0 build/src/WarblingWire.o
+ .data          0x0000000000000000        0x0 build/src/WarblingWire.o
+ .bss           0x0000000000000000        0x0 build/src/WarblingWire.o
  .text          0x0000000000000000        0x0 build/RTE/Device/MK22FN512VLH12/system_MK22F51212.o
  .data          0x0000000000000000        0x0 build/RTE/Device/MK22FN512VLH12/system_MK22F51212.o
  .bss           0x0000000000000000        0x0 build/RTE/Device/MK22FN512VLH12/system_MK22F51212.o
@@ -44,6 +77,70 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/startup.o
  .data          0x0000000000000000        0x0 build/startup.o
  .bss           0x0000000000000000        0x0 build/startup.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+ .text          0x0000000000000000      0x254 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .debug_line    0x0000000000000000      0x10c /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .debug_info    0x0000000000000000       0x26 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .debug_str     0x0000000000000000       0x80 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .debug_frame   0x0000000000000000       0x30 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .text          0x0000000000000000      0x424 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x0000000000000000      0x19b /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x0000000000000000       0x26 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_str     0x0000000000000000       0x80 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000000000000000       0x50 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .text          0x0000000000000000      0x110 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_line    0x0000000000000000       0xbd /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_info    0x0000000000000000       0x26 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_str     0x0000000000000000       0x80 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x0000000000000000       0xc4 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
 
 Memory Configuration
 
@@ -59,9 +156,11 @@ LOAD build/src/DAC.o
 LOAD build/src/main.o
 LOAD build/src/MCG.o
 LOAD build/src/TimerInt.o
-LOAD build/src/uart.o
+LOAD build/src/Utilities.o
+LOAD build/src/WarblingWire.o
 LOAD build/RTE/Device/MK22FN512VLH12/system_MK22F51212.o
 LOAD build/startup.o
+LOAD /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
 START GROUP
 LOAD /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a
 LOAD /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
@@ -97,7 +196,7 @@ END GROUP
                 0x0000000000000400                flashconfig
                 0x0000000000000001                ASSERT ((. == 0x410), ERROR: Flash Config Field not at 0x400!)
 
-.text           0x0000000000000410      0x2c4
+.text           0x0000000000000410     0x1838
                 0x0000000000000410                . = ALIGN (0x4)
  *(.text*)
  .text.ADC_Init
@@ -109,157 +208,212 @@ END GROUP
  .text.DAC_Init
                 0x00000000000004d4       0x54 build/src/DAC.o
                 0x00000000000004d4                DAC_Init
- .text.PIT0_IRQHandler
-                0x0000000000000528       0x10 build/src/main.o
-                0x0000000000000528                PIT0_IRQHandler
  .text.startup.main
-                0x0000000000000538       0x1c build/src/main.o
-                0x0000000000000538                main
+                0x0000000000000528       0x20 build/src/main.o
+                0x0000000000000528                main
  .text.MCG_Clock120_Init
-                0x0000000000000554       0x94 build/src/MCG.o
-                0x0000000000000554                MCG_Clock120_Init
+                0x0000000000000548       0x94 build/src/MCG.o
+                0x0000000000000548                MCG_Clock120_Init
  .text.TimerInt_Init
-                0x00000000000005e8       0x50 build/src/TimerInt.o
-                0x00000000000005e8                TimerInt_Init
+                0x00000000000005dc       0x50 build/src/TimerInt.o
+                0x00000000000005dc                TimerInt_Init
+ *fill*         0x000000000000062c        0x4 
+ .text.WarbleWire
+                0x0000000000000630       0xac build/src/WarblingWire.o
+                0x0000000000000630                WarbleWire
+ .text.PIT0_IRQHandler
+                0x00000000000006dc       0x10 build/src/WarblingWire.o
+                0x00000000000006dc                PIT0_IRQHandler
+ .text.WarblingWire_Init
+                0x00000000000006ec       0x14 build/src/WarblingWire.o
+                0x00000000000006ec                WarblingWire_Init
  .text.SystemInit
-                0x0000000000000638       0x30 build/RTE/Device/MK22FN512VLH12/system_MK22F51212.o
-                0x0000000000000638                SystemInit
+                0x0000000000000700       0x30 build/RTE/Device/MK22FN512VLH12/system_MK22F51212.o
+                0x0000000000000700                SystemInit
  .text.Reset_Handler
-                0x0000000000000668       0x68 build/startup.o
-                0x0000000000000668                Reset_Handler
+                0x0000000000000730       0x68 build/startup.o
+                0x0000000000000730                Reset_Handler
  .text.Default_Handler
-                0x00000000000006d0        0x4 build/startup.o
-                0x00000000000006d0                DebugMon_Handler
-                0x00000000000006d0                I2C0_IRQHandler
-                0x00000000000006d0                HardFault_Handler
-                0x00000000000006d0                SysTick_Handler
-                0x00000000000006d0                PendSV_Handler
-                0x00000000000006d0                NMI_Handler
-                0x00000000000006d0                UART0_RX_TX_IRQHandler
-                0x00000000000006d0                I2C1_IRQHandler
-                0x00000000000006d0                DMA2_IRQHandler
-                0x00000000000006d0                LLWU_IRQHandler
-                0x00000000000006d0                UART2_RX_TX_IRQHandler
-                0x00000000000006d0                SWI_IRQHandler
-                0x00000000000006d0                ADC0_IRQHandler
-                0x00000000000006d0                UsageFault_Handler
-                0x00000000000006d0                I2S0_Tx_IRQHandler
-                0x00000000000006d0                SPI1_IRQHandler
-                0x00000000000006d0                DMA9_IRQHandler
-                0x00000000000006d0                DMA14_IRQHandler
-                0x00000000000006d0                CMP1_IRQHandler
-                0x00000000000006d0                PORTD_IRQHandler
-                0x00000000000006d0                PORTB_IRQHandler
-                0x00000000000006d0                ADC1_IRQHandler
-                0x00000000000006d0                PIT2_IRQHandler
-                0x00000000000006d0                I2S0_Rx_IRQHandler
-                0x00000000000006d0                DMA5_IRQHandler
-                0x00000000000006d0                RTC_IRQHandler
-                0x00000000000006d0                PDB0_IRQHandler
-                0x00000000000006d0                FTM1_IRQHandler
-                0x00000000000006d0                PIT3_IRQHandler
-                0x00000000000006d0                RTC_Seconds_IRQHandler
-                0x00000000000006d0                MCG_IRQHandler
-                0x00000000000006d0                UART2_ERR_IRQHandler
-                0x00000000000006d0                DMA11_IRQHandler
-                0x00000000000006d0                Read_Collision_IRQHandler
-                0x00000000000006d0                Default_Handler
-                0x00000000000006d0                DMA7_IRQHandler
-                0x00000000000006d0                USB0_IRQHandler
-                0x00000000000006d0                WDOG_EWM_IRQHandler
-                0x00000000000006d0                MemManage_Handler
-                0x00000000000006d0                SVC_Handler
-                0x00000000000006d0                DMA13_IRQHandler
-                0x00000000000006d0                DMA3_IRQHandler
-                0x00000000000006d0                RNG_IRQHandler
-                0x00000000000006d0                DMA0_IRQHandler
-                0x00000000000006d0                LPUART0_IRQHandler
-                0x00000000000006d0                DMA15_IRQHandler
-                0x00000000000006d0                DAC0_IRQHandler
-                0x00000000000006d0                DMA4_IRQHandler
-                0x00000000000006d0                PIT1_IRQHandler
-                0x00000000000006d0                UART0_ERR_IRQHandler
-                0x00000000000006d0                DMA_Error_IRQHandler
-                0x00000000000006d0                LVD_LVW_IRQHandler
-                0x00000000000006d0                SPI0_IRQHandler
-                0x00000000000006d0                FTM0_IRQHandler
-                0x00000000000006d0                PORTA_IRQHandler
-                0x00000000000006d0                DAC1_IRQHandler
-                0x00000000000006d0                MCM_IRQHandler
-                0x00000000000006d0                DMA12_IRQHandler
-                0x00000000000006d0                FTM3_IRQHandler
-                0x00000000000006d0                PORTE_IRQHandler
-                0x00000000000006d0                FTM2_IRQHandler
-                0x00000000000006d0                LPTMR0_IRQHandler
-                0x00000000000006d0                BusFault_Handler
-                0x00000000000006d0                DMA8_IRQHandler
-                0x00000000000006d0                DMA10_IRQHandler
-                0x00000000000006d0                UART1_ERR_IRQHandler
-                0x00000000000006d0                UART1_RX_TX_IRQHandler
-                0x00000000000006d0                CMP0_IRQHandler
-                0x00000000000006d0                PORTC_IRQHandler
-                0x00000000000006d0                DMA6_IRQHandler
-                0x00000000000006d0                FTF_IRQHandler
-                0x00000000000006d0                DMA1_IRQHandler
+                0x0000000000000798        0x4 build/startup.o
+                0x0000000000000798                DebugMon_Handler
+                0x0000000000000798                I2C0_IRQHandler
+                0x0000000000000798                HardFault_Handler
+                0x0000000000000798                SysTick_Handler
+                0x0000000000000798                PendSV_Handler
+                0x0000000000000798                NMI_Handler
+                0x0000000000000798                UART0_RX_TX_IRQHandler
+                0x0000000000000798                I2C1_IRQHandler
+                0x0000000000000798                DMA2_IRQHandler
+                0x0000000000000798                LLWU_IRQHandler
+                0x0000000000000798                UART2_RX_TX_IRQHandler
+                0x0000000000000798                SWI_IRQHandler
+                0x0000000000000798                ADC0_IRQHandler
+                0x0000000000000798                UsageFault_Handler
+                0x0000000000000798                I2S0_Tx_IRQHandler
+                0x0000000000000798                SPI1_IRQHandler
+                0x0000000000000798                DMA9_IRQHandler
+                0x0000000000000798                DMA14_IRQHandler
+                0x0000000000000798                CMP1_IRQHandler
+                0x0000000000000798                PORTD_IRQHandler
+                0x0000000000000798                PORTB_IRQHandler
+                0x0000000000000798                ADC1_IRQHandler
+                0x0000000000000798                PIT2_IRQHandler
+                0x0000000000000798                I2S0_Rx_IRQHandler
+                0x0000000000000798                DMA5_IRQHandler
+                0x0000000000000798                RTC_IRQHandler
+                0x0000000000000798                PDB0_IRQHandler
+                0x0000000000000798                FTM1_IRQHandler
+                0x0000000000000798                PIT3_IRQHandler
+                0x0000000000000798                RTC_Seconds_IRQHandler
+                0x0000000000000798                MCG_IRQHandler
+                0x0000000000000798                UART2_ERR_IRQHandler
+                0x0000000000000798                DMA11_IRQHandler
+                0x0000000000000798                Read_Collision_IRQHandler
+                0x0000000000000798                Default_Handler
+                0x0000000000000798                DMA7_IRQHandler
+                0x0000000000000798                USB0_IRQHandler
+                0x0000000000000798                WDOG_EWM_IRQHandler
+                0x0000000000000798                MemManage_Handler
+                0x0000000000000798                SVC_Handler
+                0x0000000000000798                DMA13_IRQHandler
+                0x0000000000000798                DMA3_IRQHandler
+                0x0000000000000798                RNG_IRQHandler
+                0x0000000000000798                DMA0_IRQHandler
+                0x0000000000000798                LPUART0_IRQHandler
+                0x0000000000000798                DMA15_IRQHandler
+                0x0000000000000798                DAC0_IRQHandler
+                0x0000000000000798                DMA4_IRQHandler
+                0x0000000000000798                PIT1_IRQHandler
+                0x0000000000000798                UART0_ERR_IRQHandler
+                0x0000000000000798                DMA_Error_IRQHandler
+                0x0000000000000798                LVD_LVW_IRQHandler
+                0x0000000000000798                SPI0_IRQHandler
+                0x0000000000000798                FTM0_IRQHandler
+                0x0000000000000798                PORTA_IRQHandler
+                0x0000000000000798                DAC1_IRQHandler
+                0x0000000000000798                MCM_IRQHandler
+                0x0000000000000798                DMA12_IRQHandler
+                0x0000000000000798                FTM3_IRQHandler
+                0x0000000000000798                PORTE_IRQHandler
+                0x0000000000000798                FTM2_IRQHandler
+                0x0000000000000798                LPTMR0_IRQHandler
+                0x0000000000000798                BusFault_Handler
+                0x0000000000000798                DMA8_IRQHandler
+                0x0000000000000798                DMA10_IRQHandler
+                0x0000000000000798                UART1_ERR_IRQHandler
+                0x0000000000000798                UART1_RX_TX_IRQHandler
+                0x0000000000000798                CMP0_IRQHandler
+                0x0000000000000798                PORTC_IRQHandler
+                0x0000000000000798                DMA6_IRQHandler
+                0x0000000000000798                FTF_IRQHandler
+                0x0000000000000798                DMA1_IRQHandler
+ .text.sinf     0x000000000000079c       0x94 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+                0x000000000000079c                sinf
+ .text.__ieee754_rem_pio2f
+                0x0000000000000830      0x29c /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+                0x0000000000000830                __ieee754_rem_pio2f
+ .text.__kernel_cosf
+                0x0000000000000acc      0x104 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+                0x0000000000000acc                __kernel_cosf
+ .text.__kernel_rem_pio2f
+                0x0000000000000bd0      0x680 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+                0x0000000000000bd0                __kernel_rem_pio2f
+ .text.__kernel_sinf
+                0x0000000000001250       0x90 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+                0x0000000000001250                __kernel_sinf
+ .text.fabsf    0x00000000000012e0       0x10 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+                0x00000000000012e0                fabsf
+ .text.floorf   0x00000000000012f0       0x8c /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+                0x00000000000012f0                floorf
+ .text.scalbnf  0x000000000000137c       0xe4 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+                0x000000000000137c                scalbnf
+ .text          0x0000000000001460      0x378 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+                0x0000000000001460                __aeabi_drsub
+                0x0000000000001468                __aeabi_dsub
+                0x0000000000001468                __subdf3
+                0x000000000000146c                __adddf3
+                0x000000000000146c                __aeabi_dadd
+                0x00000000000016e4                __aeabi_ui2d
+                0x00000000000016e4                __floatunsidf
+                0x0000000000001704                __floatsidf
+                0x0000000000001704                __aeabi_i2d
+                0x0000000000001728                __extendsfdf2
+                0x0000000000001728                __aeabi_f2d
+                0x000000000000176c                __aeabi_ul2d
+                0x000000000000176c                __floatundidf
+                0x000000000000177c                __floatdidf
+                0x000000000000177c                __aeabi_l2d
+ .text          0x00000000000017d8       0xa0 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+                0x00000000000017d8                __aeabi_d2f
+                0x00000000000017d8                __truncdfsf2
  *(.rodata*)
+ .rodata.npio2_hw
+                0x0000000000001878       0x80 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .rodata.two_over_pi
+                0x00000000000018f8      0x318 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .rodata.PIo2   0x0000000000001c10       0x2c /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .rodata.init_jk
+                0x0000000000001c3c        0xc /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
  *(.glue_7)
- .glue_7        0x00000000000006d4        0x0 linker stubs
+ .glue_7        0x0000000000001c48        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x00000000000006d4        0x0 linker stubs
+ .glue_7t       0x0000000000001c48        0x0 linker stubs
  *(.init)
  *(.fini)
-                0x00000000000006d4                . = ALIGN (0x4)
-                0x00000000000006d4                _etext = .
+                0x0000000000001c48                . = ALIGN (0x4)
+                0x0000000000001c48                _etext = .
 
-.vfp11_veneer   0x00000000000006d4        0x0
- .vfp11_veneer  0x00000000000006d4        0x0 linker stubs
+.vfp11_veneer   0x0000000000001c48        0x0
+ .vfp11_veneer  0x0000000000001c48        0x0 linker stubs
 
-.v4_bx          0x00000000000006d4        0x0
- .v4_bx         0x00000000000006d4        0x0 linker stubs
+.v4_bx          0x0000000000001c48        0x0
+ .v4_bx         0x0000000000001c48        0x0 linker stubs
 
-.iplt           0x00000000000006d4        0x0
- .iplt          0x00000000000006d4        0x0 build/src/main.o
+.iplt           0x0000000000001c48        0x0
+ .iplt          0x0000000000001c48        0x0 build/src/main.o
 
-.rel.dyn        0x00000000000006d4        0x0
- .rel.iplt      0x00000000000006d4        0x0 build/src/main.o
+.rel.dyn        0x0000000000001c48        0x0
+ .rel.iplt      0x0000000000001c48        0x0 build/src/main.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM.exidx      0x00000000000006d4        0x0
-                0x00000000000006d4                __exidx_start = .
+.ARM.exidx      0x0000000000001c48        0x0
+                0x0000000000001c48                __exidx_start = .
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00000000000006d4                __exidx_end = .
+                0x0000000000001c48                __exidx_end = .
 
 .eh_frame
  *(.eh_frame)
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
-                0x00000000000006d4                _sidata = LOADADDR (.data)
+                0x0000000000001c48                _sidata = LOADADDR (.data)
 
-.data           0x000000001fff0000        0x0 load address 0x00000000000006d4
+.data           0x000000001fff0000        0x0 load address 0x0000000000001c48
                 0x000000001fff0000                . = ALIGN (0x4)
                 0x000000001fff0000                _sdata = .
  *(.data*)
                 0x000000001fff0000                . = ALIGN (0x4)
                 0x000000001fff0000                _edata = .
 
-.igot.plt       0x000000001fff0000        0x0 load address 0x00000000000006d4
+.igot.plt       0x000000001fff0000        0x0 load address 0x0000000000001c48
  .igot.plt      0x000000001fff0000        0x0 build/src/main.o
 
-.bss            0x000000001fff0000        0x0 load address 0x00000000000006d4
+.bss            0x000000001fff0000        0x4 load address 0x0000000000001c48
                 0x000000001fff0000                . = ALIGN (0x4)
                 0x000000001fff0000                _sbss = .
                 0x000000001fff0000                __bss_start__ = _sbss
  *(.bss*)
+ .bss.accumulated_phase.7910
+                0x000000001fff0000        0x4 build/src/WarblingWire.o
  *(COMMON)
-                0x000000001fff0000                . = ALIGN (0x4)
-                0x000000001fff0000                _ebss = .
-                0x000000001fff0000                __bss_end__ = _ebss
-                0x000000001fff0000                . = ALIGN (0x8)
-                0x000000001fff0000                _end = .
-                0x000000001fff0000                end = .
+                0x000000001fff0004                . = ALIGN (0x4)
+                0x000000001fff0004                _ebss = .
+                0x000000001fff0004                __bss_end__ = _ebss
+                0x000000001fff0008                . = ALIGN (0x8)
+                0x000000001fff0008                _end = .
+                0x000000001fff0008                end = .
                 [!provide]                        PROVIDE (__heap_start = _end)
 OUTPUT(build/warbling_wire.elf elf32-littlearm)
 
@@ -270,7 +424,16 @@ OUTPUT(build/warbling_wire.elf elf32-littlearm)
  .comment       0x0000000000000011       0x12 build/src/main.o
  .comment       0x0000000000000011       0x12 build/src/MCG.o
  .comment       0x0000000000000011       0x12 build/src/TimerInt.o
+ .comment       0x0000000000000011       0x12 build/src/WarblingWire.o
  .comment       0x0000000000000011       0x12 build/RTE/Device/MK22FN512VLH12/system_MK22F51212.o
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+ .comment       0x0000000000000011       0x12 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
 
 .ARM.attributes
                 0x0000000000000000       0x32
@@ -285,6 +448,138 @@ OUTPUT(build/warbling_wire.elf elf32-littlearm)
  .ARM.attributes
                 0x00000000000000d0       0x34 build/src/TimerInt.o
  .ARM.attributes
-                0x0000000000000104       0x34 build/RTE/Device/MK22FN512VLH12/system_MK22F51212.o
+                0x0000000000000104       0x34 build/src/WarblingWire.o
  .ARM.attributes
-                0x0000000000000138       0x25 build/startup.o
+                0x0000000000000138       0x34 build/RTE/Device/MK22FN512VLH12/system_MK22F51212.o
+ .ARM.attributes
+                0x000000000000016c       0x25 build/startup.o
+ .ARM.attributes
+                0x0000000000000191       0x34 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+ .ARM.attributes
+                0x00000000000001c5       0x34 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .ARM.attributes
+                0x00000000000001f9       0x34 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+ .ARM.attributes
+                0x000000000000022d       0x34 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .ARM.attributes
+                0x0000000000000261       0x34 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+ .ARM.attributes
+                0x0000000000000295       0x34 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+ .ARM.attributes
+                0x00000000000002c9       0x34 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+ .ARM.attributes
+                0x00000000000002fd       0x34 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+ .ARM.attributes
+                0x0000000000000331       0x1e /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x000000000000034f       0x1e /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+
+.debug_info     0x0000000000000000     0x59f5
+ .debug_info    0x0000000000000000      0xace /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+ .debug_info    0x0000000000000ace      0xcd2 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .debug_info    0x00000000000017a0      0xafe /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+ .debug_info    0x000000000000229e      0xcf3 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .debug_info    0x0000000000002f91      0xacb /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+ .debug_info    0x0000000000003a5c      0xa17 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+ .debug_info    0x0000000000004473      0xa61 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+ .debug_info    0x0000000000004ed4      0xad5 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+ .debug_info    0x00000000000059a9       0x26 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x00000000000059cf       0x26 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+
+.debug_abbrev   0x0000000000000000     0x13cc
+ .debug_abbrev  0x0000000000000000      0x290 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+ .debug_abbrev  0x0000000000000290      0x2bd /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .debug_abbrev  0x000000000000054d      0x255 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+ .debug_abbrev  0x00000000000007a2      0x2c1 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .debug_abbrev  0x0000000000000a63      0x25d /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+ .debug_abbrev  0x0000000000000cc0      0x235 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+ .debug_abbrev  0x0000000000000ef5      0x251 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+ .debug_abbrev  0x0000000000001146      0x25e /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+ .debug_abbrev  0x00000000000013a4       0x14 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x00000000000013b8       0x14 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+
+.debug_loc      0x0000000000000000     0x1e0f
+ .debug_loc     0x0000000000000000       0xd2 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+ .debug_loc     0x00000000000000d2      0x655 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .debug_loc     0x0000000000000727      0x205 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+ .debug_loc     0x000000000000092c      0xd38 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .debug_loc     0x0000000000001664      0x12f /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+ .debug_loc     0x0000000000001793       0x7c /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+ .debug_loc     0x000000000000180f      0x250 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+ .debug_loc     0x0000000000001a5f      0x3b0 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+
+.debug_aranges  0x0000000000000000      0x140
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+ .debug_aranges
+                0x0000000000000020       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .debug_aranges
+                0x0000000000000040       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+ .debug_aranges
+                0x0000000000000060       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .debug_aranges
+                0x0000000000000080       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+ .debug_aranges
+                0x00000000000000a0       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+ .debug_aranges
+                0x00000000000000c0       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+ .debug_aranges
+                0x00000000000000e0       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+ .debug_aranges
+                0x0000000000000100       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_aranges
+                0x0000000000000120       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+
+.debug_ranges   0x0000000000000000      0x118
+ .debug_ranges  0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+ .debug_ranges  0x0000000000000028       0x48 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .debug_ranges  0x0000000000000070       0x10 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+ .debug_ranges  0x0000000000000080       0x10 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .debug_ranges  0x0000000000000090       0x10 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+ .debug_ranges  0x00000000000000a0       0x10 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+ .debug_ranges  0x00000000000000b0       0x10 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+ .debug_ranges  0x00000000000000c0       0x58 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+
+.debug_line     0x0000000000000000     0x2123
+ .debug_line    0x0000000000000000      0x25d /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+ .debug_line    0x000000000000025d      0x54c /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .debug_line    0x00000000000007a9      0x2a8 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+ .debug_line    0x0000000000000a51      0xb40 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .debug_line    0x0000000000001591      0x248 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+ .debug_line    0x00000000000017d9      0x1dc /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+ .debug_line    0x00000000000019b5      0x2a4 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+ .debug_line    0x0000000000001c59      0x2b7 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+ .debug_line    0x0000000000001f10      0x186 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x0000000000002096       0x8d /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+
+.debug_str      0x0000000000000000      0xa17
+ .debug_str     0x0000000000000000      0x5f4 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+                                        0x65e (size before relaxing)
+ .debug_str     0x00000000000005f4       0xb3 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+                                        0x6be (size before relaxing)
+ .debug_str     0x00000000000006a7       0x32 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+                                        0x63c (size before relaxing)
+ .debug_str     0x00000000000006d9       0x74 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+                                        0x657 (size before relaxing)
+ .debug_str     0x000000000000074d       0x32 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+                                        0x63c (size before relaxing)
+ .debug_str     0x000000000000077f       0x33 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+                                        0x62b (size before relaxing)
+ .debug_str     0x00000000000007b2       0xaa /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+                                        0x64d (size before relaxing)
+ .debug_str     0x000000000000085c      0x13b /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+                                        0x661 (size before relaxing)
+ .debug_str     0x0000000000000997       0x80 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_str     0x0000000000000a17       0x80 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+
+.debug_frame    0x0000000000000000      0x260
+ .debug_frame   0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_sin.o)
+ .debug_frame   0x0000000000000034       0x44 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-ef_rem_pio2.o)
+ .debug_frame   0x0000000000000078       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_cos.o)
+ .debug_frame   0x0000000000000098       0x5c /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_rem_pio2.o)
+ .debug_frame   0x00000000000000f4       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-kf_sin.o)
+ .debug_frame   0x0000000000000114       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_fabs.o)
+ .debug_frame   0x0000000000000134       0x20 /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_floor.o)
+ .debug_frame   0x0000000000000154       0x3c /usr/lib/gcc/arm-none-eabi/9.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-sf_scalbn.o)
+ .debug_frame   0x0000000000000190       0xac /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x000000000000023c       0x24 /usr/lib/gcc/arm-none-eabi/9.3.0/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
