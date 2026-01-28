@@ -157,9 +157,9 @@ $$
 
 So this yeilds 2 equations and 2 unknowns:
 $$
- \delta + \alpha  = 1 \\
- \delta - \alpha = .1 \\
-==> \delta = frac{1.1}{2} = 0.55
+ \delta + \alpha  = 1 \\\\
+ \delta - \alpha = .1 \\\\
+==> \delta = frac{1.1}{2} = 0.55 \\\\
     \alpha = 1 - \delta = 0.45
 $$
 
